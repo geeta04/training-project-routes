@@ -1,0 +1,25 @@
+.container{
+    margin-left:100px;
+    color:rgb(12, 12, 12);
+}
+#title{
+    margin-top:20px;
+    height:80px;
+    padding:5px;
+    font-family: 'Raleway', sans-serif;
+background-color:rgb(161, 155, 219);
+}
+#id{
+    margin-top:20px;
+    height:80px;
+    padding:5px;
+    background-color: rgb(110, 174, 226);
+    font-family: 'Raleway', sans-serif;
+}
+#body{
+    margin-top: 20px;
+    padding: 5px;
+    height:110px;
+    background-color: rgb(49, 100, 139);
+    font-family: 'Raleway', sans-serif;
+}

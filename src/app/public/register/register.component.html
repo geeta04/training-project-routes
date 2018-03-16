@@ -1,0 +1,37 @@
+<div class="container">
+    <form class="form-style" name="register_form" id="register_form" #frm="ngForm">
+        <h1>User Registration Form</h1>
+        <hr id="hrline">
+
+        <ul>
+            <div id="col-md-8">
+
+                <li>
+                    <input type="text" class="form-control"  placeholder="First Name" [(ngModel)]="formObject.fname" name="fname" required />
+                   
+                    <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="formObject.lname" name="lname" required/>
+                    
+                </li>
+            </div>
+            <li>
+                <input type="text" class="form-control"  placeholder="Contact No." [(ngModel)]="formObject.contact" name="contact" required/>
+                
+                <input type="email" class="form-control"  placeholder="Email Id" [(ngModel)]="formObject.email" name="email" required/>
+               </li>
+
+            <li>
+                <textarea class="form-control" placeholder="Full Address" [(ngModel)]="formObject.address" name="address" required></textarea>
+            </li>
+            <li>
+                <button (click)="submit()" [disabled]="frm.invalid">Button</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+<p>{{formObject.fname}}</p>
+
+<p> {{formObject.lname}}</p>
+<p> {{formObject.contact}}</p>
+<p> {{formObject.email}}</p>
+<p> {{formObject.address}}</p>

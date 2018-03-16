@@ -1,0 +1,7 @@
+
+<div class="left">
+<ul>
+
+        <li class="box" *ngFor="let objects of allPosts"><a [routerLink]='["/posts",objects.id]'>{{objects.title}}+{{objects.id}}</a>
+</ul>
+</div>
